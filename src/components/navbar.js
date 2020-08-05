@@ -46,12 +46,11 @@ export class Navbar extends Component {
         }}
       >
         <div className={navbarStyles.nav}>
-          {/* <img
-            className={navbarStyles.logo}
-            src="https://i.postimg.cc/XYgSxQQZ/logo.png"
-            alt=""
-          /> */}
-          <h4>&#60;Michael Carnevale/&#62;</h4>
+          <h4>
+            <Link href="#" className={navbarStyles.logo}>
+              MICHAEL CARNEVALE
+            </Link>
+          </h4>
 
           <ul className={navbarStyles.navArea}>
             <li>

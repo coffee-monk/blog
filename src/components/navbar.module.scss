@@ -19,16 +19,12 @@ nav > * {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.75rem 5rem;
+  padding: 1rem 1rem;
 }
 
 .nav > * {
   margin: 0;
   color: white;
-}
-
-.logo {
-  cursor: pointer;
 }
 
 .navArea {
@@ -52,13 +48,13 @@ nav > * {
   display: block;
   width: 0;
   height: 2px;
-  background: rgba(256, 256, 256, 0);
+  background: rgba(249, 38, 114, 0);
   transition: 0.3s;
 }
 
 .navArea li a:hover::after {
   width: 100%;
-  background: rgba(256, 256, 256, 1);
+  background: rgba(249, 38, 114, 1);
 }
 
 .navArea li a::before {
@@ -66,27 +62,38 @@ nav > * {
   display: block;
   width: 0;
   height: 2px;
-  background: rgba(256, 256, 256, 0);
+  background: rgba(249, 38, 114, 0);
   transition: 0.3s;
 }
 
 .navArea li a:hover::before {
   width: 100%;
-  background: rgba(256, 256, 256, 1);
+  background: rgba(249, 38, 114, 1);
 }
 
 .btn {
   text-transform: uppercase;
   color: #fff;
   border-radius: 15px;
-  border: 1px solid #fff;
+  border: 1px solid #f92672;
   padding: 7.5px;
   margin-left: 15px;
-  // box-shadow: none;
   transition: 0.5s;
 }
 
 .btn:hover {
-  background: #000;
-  border-color: rgba(0, 0, 0, 0);
+  background: #f92672;
+  color: #fff;
+  border-color: transparent;
+}
+
+.logo {
+  border: 1px solid #fff;
+  padding: 5px;
+  transition: 0.5s;
+  color: #fff;
+}
+
+.logo:hover {
+  color: #f92672;
 }
