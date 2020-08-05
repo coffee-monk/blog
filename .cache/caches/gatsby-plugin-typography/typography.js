@@ -1,0 +1,1 @@
+module.exports = require("/home/acorn/Desktop/blog/src/utils/typography")
