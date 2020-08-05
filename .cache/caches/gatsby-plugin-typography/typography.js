@@ -1,1 +1,1 @@
-module.exports = require("/home/acorn/Desktop/blog/src/utils/typography")
+module.exports = require("/home/michael/Desktop/WebDev/Gatsby/blog/src/utils/typography")

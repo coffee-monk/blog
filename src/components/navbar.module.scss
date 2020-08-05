@@ -43,7 +43,6 @@ nav > * {
 }
 .navArea li a {
   color: #fff;
-  box-shadow: none;
   margin-bottom: 0;
   text-decoration: none;
 }
@@ -83,7 +82,7 @@ nav > * {
   border: 1px solid #fff;
   padding: 7.5px;
   margin-left: 15px;
-  box-shadow: none;
+  // box-shadow: none;
   transition: 0.5s;
 }
 

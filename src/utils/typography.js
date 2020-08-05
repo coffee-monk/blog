@@ -3,14 +3,12 @@ import bootstrapTheme from "typography-theme-bootstrap"
 
 bootstrapTheme.overrideThemeStyles = () => {
 	return {
-		"a": {
+		a: {
 			boxShadow: `none`,
 			textDecoration: `none`,
-			},
-}}
-
-
-
+		},
+	}
+}
 
 const typography = new Typography(bootstrapTheme)
 
