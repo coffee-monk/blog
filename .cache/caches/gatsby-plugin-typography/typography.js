@@ -1,1 +1,0 @@
-module.exports = require("/home/michael/Desktop/WebDev/Gatsby/blog/src/utils/typography")
