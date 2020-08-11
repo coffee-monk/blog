@@ -1,0 +1,58 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.footerMiddle {
+  transition: 0.5s;
+  border-radius: 25%;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.footerMiddle:hover {
+  color: #f92672;
+  background: #fff;
+}
+
+.footerLeft {
+  margin: auto 0px;
+}
+
+.footerRight {
+  margin: auto 0px;
+}
+
+.footerRight li {
+  margin: 0 0 0 15px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.footerRight li a {
+  border: solid #fff 1px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.footerRight li a:hover {
+  border-radius: 0%;
+}
+
+//////////////
+
+.footerContainer {
+  display: flex;
+  background: #f92672;
+  color: #fff;
+  padding: 16px;
+}
+
+.left.innerWrapper,
+.right.innerWrapper {
+  flex: 1;
+  display: flex;
+  min-width: -webkit-min-content; /* Workaround to Chrome bug */
+}
+.right.innerWrapper {
+  justify-content: flex-end;
+}

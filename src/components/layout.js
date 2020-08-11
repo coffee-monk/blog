@@ -5,6 +5,7 @@ import { rhythm, scale } from "../utils/typography"
 
 import VideoBackground from "./video-background"
 import Navbar from "./navbar"
+import Footer from "./footer"
 
 class Layout extends React.Component {
   render() {
@@ -43,11 +44,7 @@ class Layout extends React.Component {
         >
           <main>{children}</main>
         </div>
-        <Footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </Footer>
+        <Footer />
       </Wrapper>
     )
   }
@@ -55,12 +52,6 @@ class Layout extends React.Component {
 
 const Wrapper = styled.div`
   margin: none;
-`
-
-const Footer = styled.footer`
-  text-align: center;
-  margin: 24px;
-  text-decoration: none;
 `
 
 export default Layout
