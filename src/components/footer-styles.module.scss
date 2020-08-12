@@ -1,40 +1,126 @@
+// CONTACT
+
+.contactContainer {
+  background: #000;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.contactForm h2::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 4px;
+  background: #fff;
+  margin: 0.5rem auto 0rem auto;
+}
+
+.contactForm h5 {
+  margin: 1rem auto 0.5rem auto;
+}
+
+.contactContainer > input:hover {
+  background: #f92672;
+}
+
+.contactFields {
+  margin: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80vh;
+  margin: 0px;
+}
+
+.contactFields > * {
+  margin: 0.2rem;
+  width: 100%;
+  background: transparent;
+  border: 1px solid #f92672;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px 8px 5px 8px;
+  margin: 8px;
+  outline: none;
+}
+
+.contactFields > *::placeholder {
+  color: #7f7f7f;
+}
+.contactForm > *:focus {
+  outline: none;
+}
+
+.textArea {
+  height: 8rem;
+}
+
+.submit {
+  // submit button
+  color: #fff;
+  background: transparent;
+  border: 1px solid #f92672;
+  padding: 7.5px;
+  transition: 0.5s;
+  margin: 8px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.submit:hover {
+  background: #f92672;
+}
+
+// FOOTER
+
 html {
   scroll-behavior: smooth;
 }
 
-.footerMiddle {
+.date {
+  margin: auto 0px;
+}
+
+.upArrow {
   transition: 0.5s;
   border-radius: 25%;
   border: 1px solid #fff;
   color: #fff;
+  cursor: pointer;
 }
 
-.footerMiddle:hover {
+.upArrow:hover {
   color: #f92672;
   background: #fff;
 }
 
-.footerLeft {
+.socialMedia {
   margin: auto 0px;
 }
 
-.footerRight {
-  margin: auto 0px;
-}
-
-.footerRight li {
+.socialMedia li {
   margin: 0 0 0 15px;
   display: inline-block;
   text-transform: uppercase;
 }
 
-.footerRight li a {
+.socialMedia li a {
   border: solid #fff 1px;
   border-radius: 50%;
   transition: 0.5s;
 }
 
-.footerRight li a:hover {
+.socialMedia li a:hover {
   border-radius: 0%;
 }
 
@@ -47,12 +133,12 @@ html {
   padding: 16px;
 }
 
-.left.innerWrapper,
-.right.innerWrapper {
+.footerLeft.innerWrapper,
+.footerRight.innerWrapper {
   flex: 1;
   display: flex;
   min-width: -webkit-min-content; /* Workaround to Chrome bug */
 }
-.right.innerWrapper {
+.footerRight.innerWrapper {
   justify-content: flex-end;
 }

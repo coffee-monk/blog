@@ -62,13 +62,15 @@ nav > * {
   display: block;
   width: 0;
   height: 2px;
-  background: rgba(249, 38, 114, 0);
+  // background: rgba(249, 38, 114, 0);
+  background: transparent;
   transition: 0.3s;
 }
 
 .navArea li a:hover::before {
   width: 100%;
-  background: rgba(249, 38, 114, 1);
+  // background: rgba(249, 38, 114, 1);
+  background: #f92672;
 }
 
 .btn {
