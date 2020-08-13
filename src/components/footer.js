@@ -1,5 +1,7 @@
 import React, { Component } from "react"
 import { SocialIcon } from "react-social-icons"
+import { Element } from "react-scroll"
+import Particles from "react-particles-js"
 
 import footerStyles from "./footer-styles.module.scss"
 
@@ -12,34 +14,49 @@ export class Footer extends Component {
   render() {
     return (
       <footer>
-        <section className={footerStyles.contactContainer}>
-          <div className={footerStyles.contactForm}>
-            <h2>CONTACT</h2>
-            <h5>Have a question or want to work together?</h5>
-            <form className={footerStyles.contactFields}>
-              <input type="text" name="name" id="name" placeholder="Name" />
-
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Enter Email"
-              />
-
-              <textarea
-                className={footerStyles.textArea}
-                name="message"
-                id="message"
-                placeholder="Enter Message"
-              ></textarea>
-            </form>
-            <input
-              className={footerStyles.submit}
-              type="submit"
-              value="Submit"
+        <Element id="contact-form" name="contact-form">
+          <section>
+            <Particles
+              width="100%"
+              style={{
+                position: "absolute",
+                left: "0",
+                background: `black`,
+                zIndex: "-1",
+              }}
+              params={particleParameters}
             />
-          </div>
-        </section>
+            <div className={footerStyles.contactContainer}>
+              <div className={footerStyles.contactForm}>
+                <h2>CONTACT</h2>
+                <h5>Have a question or want to work together?</h5>
+
+                <form className={footerStyles.contactFields}>
+                  <input type="text" name="name" id="name" placeholder="Name" />
+
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Enter Email"
+                  />
+
+                  <textarea
+                    className={footerStyles.textArea}
+                    name="message"
+                    id="message"
+                    placeholder="Enter Message"
+                  ></textarea>
+                </form>
+                <input
+                  className={footerStyles.submit}
+                  type="submit"
+                  value="Submit"
+                />
+              </div>
+            </div>
+          </section>
+        </Element>
 
         <section className={footerStyles.footerContainer}>
           <div
@@ -96,6 +113,58 @@ export class Footer extends Component {
       </footer>
     )
   }
+}
+
+const particleParameters = {
+  particles: {
+    number: {
+      value: 160,
+      density: {
+        enable: false,
+      },
+    },
+    size: {
+      value: 3,
+      random: true,
+      anim: {
+        speed: 4,
+        size_min: 0.3,
+      },
+    },
+    line_linked: {
+      enable: false,
+    },
+    move: {
+      random: true,
+      speed: 1,
+      direction: "top",
+      out_mode: "out",
+    },
+  },
+  interactivity: {
+    events: {
+      onhover: {
+        enable: true,
+        mode: "bubble",
+      },
+      onclick: {
+        enable: true,
+        mode: "repulse",
+      },
+    },
+    modes: {
+      bubble: {
+        distance: 250,
+        duration: 2,
+        size: 0,
+        opacity: 0,
+      },
+      repulse: {
+        distance: 400,
+        duration: 4,
+      },
+    },
+  },
 }
 
 export default Footer

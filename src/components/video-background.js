@@ -55,21 +55,23 @@ export class VideoBackground extends Component {
           </a> */}
         </div>
 
-        <span className={vidBgStyles.bottomLeft}>
-          <Typer
-            heading={"\u03BB "}
-            dataText={[
-              "Hi, I'm Mike!",
-              "I am a Researcher + Developer + Designer",
-              "Tell Me Your COOL PROJECT IDEA!!!",
-              "I Do Full-Stack Development",
-              "I Like JS + Python + Linux",
-              "I Create Digital Products",
-              "I also do Transcription & Editing",
-              "Let's Build Something Awesome!!!",
-            ]}
-          />
-        </span>
+        <div className={vidBgStyles.bottomLeft}>
+          <span className={vidBgStyles.typer}>
+            <h4 style={{ color: "#f92672" }}>&lambda; </h4>
+            <Typer
+              dataText={[
+                "Hi, I'm Mike!",
+                "I am a Researcher + Developer + Designer",
+                "Tell Me Your COOL PROJECT IDEA!!!",
+                "I Do Full-Stack Development",
+                "I Like JS + Python + Linux",
+                "I Create Digital Products",
+                "I also do Transcription & Editing",
+                "Let's Build Something Awesome!!!",
+              ]}
+            />
+          </span>
+        </div>
 
         <ul className={vidBgStyles.bottomRight}>
           <li>

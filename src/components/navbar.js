@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
+import { Link as ScrollLink } from "react-scroll"
 
 import navbarStyles from "./navbar.module.scss"
 
@@ -62,9 +63,14 @@ export class Navbar extends Component {
             <li>
               <a href={`${__PATH_PREFIX__}/blog/`}>Blog</a>
             </li>
-            <Link href="#" className={navbarStyles.btn}>
-              Contact
-            </Link>
+            <ScrollLink
+              to="contact-form"
+              spy={true}
+              smooth={true}
+              duration={150}
+            >
+              <Link className={navbarStyles.btn}>Contact</Link>
+            </ScrollLink>
           </ul>
         </div>
       </nav>
