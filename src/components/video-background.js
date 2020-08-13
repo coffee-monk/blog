@@ -78,7 +78,7 @@ export class VideoBackground extends Component {
             <SocialIcon
               network="linkedin"
               style={{ height: 30, width: 30 }}
-              fgColor="fff"
+              fgColor="#fff"
               bgColor="transparent"
               url="http://twitter.com/github"
             />
