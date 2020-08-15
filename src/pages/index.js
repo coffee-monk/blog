@@ -3,7 +3,8 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Button from "../components/button"
+
+import indexStyles from "./index-styles.module.scss"
 
 class IndexPage extends React.Component {
   render() {
@@ -16,22 +17,24 @@ class IndexPage extends React.Component {
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
 
-        <img style={{ margin: 0 }} src="./GatsbyScene.svg" alt="Gatsby Scene" />
-        <h1>
-          Hey people{" "}
-          <span role="img" aria-label="wave emoji">
-            👋
-          </span>
-        </h1>
-        <p>Welcome to your new Gatsby website. You are on your home page.</p>
-        <p>
-          This starter comes out of the box with styled components and Gatsby's
-          default starter blog running on Netlify CMS.
-        </p>
-        <p>Now go build something great!</p>
-        <Link to="/blog/">
-          <Button marginTop="35px">Go to Blog</Button>
-        </Link>
+        <section className={indexStyles.services}>
+          <h1>SERVICES</h1>
+
+          <div className={indexStyles.serviceItems}>
+            <div className={indexStyles.serviceItem}>
+              <h3>Development</h3>
+              <p>Full-Stack developer proficient in JS and Python.</p>
+            </div>
+            <div className={indexStyles.serviceItem}>
+              <h3>Transcription</h3>
+              <p>Transcription of Audio Recording to Text</p>
+            </div>
+            <div className={indexStyles.serviceItem}>
+              <h3>Research</h3>
+              <p>Data analysis, Research Methods, & Publishing Manuscripts.</p>
+            </div>
+          </div>
+        </section>
       </Layout>
     )
   }

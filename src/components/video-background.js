@@ -57,7 +57,7 @@ export class VideoBackground extends Component {
 
         <div className={vidBgStyles.bottomLeft}>
           <span className={vidBgStyles.typer}>
-            <h4 style={{ color: "#f92672" }}>&lambda; </h4>
+            <h4 style={{ color: "#f92672" }}>$ </h4>
             <Typer
               dataText={[
                 "Hi, I'm Mike!",
