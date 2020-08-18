@@ -35,6 +35,7 @@ export class Footer extends Component {
                   name="contact"
                   method="POST"
                   data-netlify="true"
+                  data-netlify-honeypot="bot-field"
                   className={footerStyles.contactFields}
                 >
                   <input type="text" name="name" id="name" placeholder="Name" />
