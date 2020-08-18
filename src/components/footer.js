@@ -31,7 +31,12 @@ export class Footer extends Component {
                 <h2>CONTACT</h2>
                 <h5>Have a question or want to work together?</h5>
 
-                <form className={footerStyles.contactFields}>
+                <form
+                  name="contact"
+                  method="POST"
+                  data-netlify="true"
+                  className={footerStyles.contactFields}
+                >
                   <input type="text" name="name" id="name" placeholder="Name" />
 
                   <input
@@ -47,12 +52,12 @@ export class Footer extends Component {
                     id="message"
                     placeholder="Enter Message"
                   ></textarea>
+                  <input
+                    className={footerStyles.submit}
+                    type="submit"
+                    value="Submit"
+                  />
                 </form>
-                <input
-                  className={footerStyles.submit}
-                  type="submit"
-                  value="Submit"
-                />
               </div>
             </div>
           </section>
