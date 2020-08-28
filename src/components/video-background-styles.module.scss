@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
 
-:root {
-  --primary-color: #3a4052;
-}
-
 .showcase {
   height: 100vh;
   position: relative;
@@ -11,7 +7,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #fff;
+  color: var(--textColorLight);
   padding: 0 20px;
   overflow: hidden;
 }
@@ -78,7 +74,7 @@
   width: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: var(--tertiaryColor);
   position: absolute;
 }
 
@@ -97,9 +93,9 @@
   display: inline-block;
   padding: 10px 30px;
   background: var(--primary-color);
-  color: #fff;
+  color: var(--textColorLight);
   border-radius: 5px;
-  border: solid #fff 1px;
+  border: solid var(--textColorLight) 1px;
   margin-top: 25px;
   opacity: 0.7;
 }
@@ -124,7 +120,7 @@
 }
 
 .bottomRight li a {
-  border: solid #f92672 1px;
+  border: solid var(--primaryColor) 1px;
   border-radius: 50%;
   transition: 0.5s;
 }

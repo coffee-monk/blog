@@ -2,6 +2,8 @@ import React, { Component } from "react"
 import { SocialIcon } from "react-social-icons"
 import { Element } from "react-scroll"
 import Particles from "react-particles-js"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCopyright, faArrowCircleUp } from "@fortawesome/free-solid-svg-icons"
 
 import footerStyles from "./footer-styles.module.scss"
 
@@ -38,6 +40,7 @@ export class Footer extends Component {
                   data-netlify-honeypot="bot-field"
                   className={footerStyles.contactFields}
                 >
+                  {/* hidden input necessary for Netfliy forms to work */}
                   <input type="hidden" name="form-name" value="contact" />
 
                   <input type="text" name="name" id="name" placeholder="Name" />
@@ -71,7 +74,8 @@ export class Footer extends Component {
             className={`${footerStyles.footerLeft} ${footerStyles.innerWrapper}`}
           >
             <h4 className={footerStyles.date}>
-              © {new Date().getFullYear()} Michael Carnevale
+              <FontAwesomeIcon icon={faCopyright} /> {new Date().getFullYear()}{" "}
+              Michael Carnevale
             </h4>
           </div>
 
@@ -80,7 +84,8 @@ export class Footer extends Component {
           >
             <h2 onClick={this.topFunction} className={footerStyles.upArrow}>
               {/* &#8673; */}
-              &#8679;
+              <FontAwesomeIcon icon={faArrowCircleUp} />
+              {/* &#8679; */}
             </h2>
           </div>
 

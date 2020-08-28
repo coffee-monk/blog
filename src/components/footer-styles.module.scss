@@ -8,7 +8,7 @@
 .contactContainer {
   background: transparent;
   height: 100vh;
-  color: #fff;
+  color: var(--textColorLight);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +26,7 @@
   display: block;
   width: 60%;
   height: 4px;
-  background: #fff;
+  background: var(--textColorLight);
   margin: 0.5rem auto 0rem auto;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .contactContainer > input:hover {
-  background: #f92672;
+  background: var(--primaryColor);
 }
 
 .contactFields {
@@ -51,7 +51,7 @@
   margin: 0.2rem;
   width: 100%;
   background: transparent;
-  border: 1px solid #f92672;
+  border: 1px solid var(--primaryColor);
   border-radius: 5px;
   color: #fff;
   padding: 5px 8px 5px 8px;
@@ -62,8 +62,10 @@
 .contactFields > *::placeholder {
   color: #7f7f7f;
 }
-.contactForm > *:focus {
-  outline: none;
+
+.contactFields > input:focus,
+.contactFields > textarea:focus {
+  box-shadow: 0 0 7.5px var(--primaryColor);
 }
 
 .textArea {
@@ -72,9 +74,10 @@
 
 .submit {
   // submit button
-  color: #fff;
+  color: var(--textColorLight);
   background: transparent;
-  border: 1px solid #f92672;
+  border: 1px solid var(--primaryColor);
+  border-radius: 0px;
   padding: 7.5px;
   width: 5rem;
   transition: 0.5s;
@@ -84,7 +87,7 @@
 }
 
 .submit:hover {
-  background: #f92672;
+  background: var(--primaryColor);
 }
 
 // FOOTER
@@ -98,17 +101,14 @@ html {
 }
 
 .upArrow {
-  transition: 0.5s;
-  border-radius: 25%;
-  border: 1px solid #fff;
-  color: #fff;
+  transition: 0.25s;
+  color: #000;
   cursor: pointer;
 }
 
-.upArrow:hover {
-  color: #f92672;
-  background: #fff;
-}
+// .upArrow:hover {
+//   color: #3b3b3b;
+// }
 
 .socialMedia {
   margin: auto 0px;
@@ -121,7 +121,7 @@ html {
 }
 
 .socialMedia li a {
-  border: solid #fff 1px;
+  border: solid var(--textColorLight) 1px;
   border-radius: 50%;
   transition: 0.5s;
 }
@@ -134,7 +134,7 @@ html {
 
 .footerContainer {
   display: flex;
-  background: #f92672;
+  background: var(--primaryColor);
   color: #fff;
   padding: 16px;
 }

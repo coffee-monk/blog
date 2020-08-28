@@ -24,7 +24,7 @@ nav > * {
 
 .nav > * {
   margin: 0;
-  color: white;
+  color: var(--textColorLight);
 }
 
 .navArea {
@@ -38,7 +38,7 @@ nav > * {
   margin-bottom: 0;
 }
 .navArea li a {
-  color: #fff;
+  color: var(--textColorLight);
   margin-bottom: 0;
   text-decoration: none;
 }
@@ -54,7 +54,7 @@ nav > * {
 
 .navArea li a:hover::after {
   width: 100%;
-  background: rgba(249, 38, 114, 1);
+  background: var(--primaryColor);
 }
 
 .navArea li a::before {
@@ -62,22 +62,20 @@ nav > * {
   display: block;
   width: 0;
   height: 2px;
-  // background: rgba(249, 38, 114, 0);
   background: transparent;
   transition: 0.3s;
 }
 
 .navArea li a:hover::before {
   width: 100%;
-  // background: rgba(249, 38, 114, 1);
-  background: #f92672;
+  background: var(--primaryColor);
 }
 
 .btn {
   text-transform: uppercase;
   color: #fff;
   border-radius: 15px;
-  border: 1px solid #f92672;
+  border: 1px solid var(--primaryColor);
   padding: 7.5px;
   margin-left: 15px;
   transition: 0.5s;
@@ -85,20 +83,20 @@ nav > * {
 }
 
 .btn:hover {
-  background: #f92672;
+  background: var(--primaryColor);
   color: #fff;
   border-color: transparent;
 }
 
 .logo {
-  border: 1px solid #f92672;
+  border: 1px solid var(--primaryColor);
   padding: 5px;
   transition: 0.5s;
   color: #fff;
 }
 
 .logo:hover {
-  background: #f92672;
+  background: var(--primaryColor);
 }
 
 // Scrollbar
@@ -108,9 +106,9 @@ nav > * {
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.5);
+  background: var(--tertiaryColor);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #f92672;
+  background: var(--primaryColor);
 }

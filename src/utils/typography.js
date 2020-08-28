@@ -2,25 +2,7 @@ import Typography from "typography"
 import bootstrapTheme from "typography-theme-bootstrap"
 
 bootstrapTheme.overrideThemeStyles = () => {
-	return {
-		a: {
-			boxShadow: `none`,
-			textDecoration: `none`,
-		},
-		p: { margin: `0px` },
-		h4: {
-			margin: `0px`,
-		},
-		h3: {
-			margin: `0px`,
-		},
-		h2: {
-			margin: `0px`,
-		},
-		h1: {
-			margin: `0px`,
-		},
-	}
+	return {}
 }
 
 const typography = new Typography(bootstrapTheme)
