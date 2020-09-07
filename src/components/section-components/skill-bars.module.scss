@@ -1,0 +1,57 @@
+.container {
+  & > .skillBar {
+    margin: 0rem 0px 0.75rem 0px;
+  }
+
+  & > .skillBar:last-child {
+    margin-bottom: 0px;
+  }
+
+  .skillBar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 1.75rem;
+    box-shadow: 0 0 0 1px var(--primaryColor);
+
+    .name {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background: #fff;
+      color: #3b3b3b; // var(--primaryColor);
+      // border: var(--primaryColor) 1px solid;
+      width: 7rem;
+    }
+
+    .greybar {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: #ffffff;
+      // border: var(--primaryColor) 1px solid;
+      padding: 0px 0px;
+
+      .bar {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        // height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0rem 0.75rem;
+        color: var(--textColorLight);
+        background: var(--primaryColor);
+
+        .logo {
+          height: 100%;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          width: 1rem;
+        }
+      }
+    }
+  }
+}

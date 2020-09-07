@@ -3,8 +3,9 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import Services from "../components/page-sections/services"
-import SkillBars from "../components/page-sections/skill-bars"
+import Services from "../components/section-components/services"
+import Skills from "../components/section-components/skills"
+import SkillsTest from "../components/section-components/skillsTest"
 
 class IndexPage extends React.Component {
   render() {
@@ -17,7 +18,8 @@ class IndexPage extends React.Component {
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
         <Services />
-        <SkillBars />
+        {/* <Skills /> */}
+        <SkillsTest />
       </Layout>
     )
   }

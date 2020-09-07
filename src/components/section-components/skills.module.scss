@@ -1,0 +1,51 @@
+.container {
+  .skill {
+    display: flex;
+    position: relative;
+    align-items: center;
+    // background: rgba(249, 38, 115, 0.1);
+    margin: 0px;
+    border-top: 1px dashed var(--primaryColor);
+
+    &:last-of-type {
+      border-bottom: 1px dashed var(--primaryColor);
+    }
+
+    .summary {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+
+      & > * {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+      }
+
+      .benefits {
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        align-items: top;
+        width: 100%;
+
+        & > div {
+          & > .fa {
+            color: var(--primaryColor);
+            font-size: 3rem;
+          }
+
+          & > h4 {
+            padding-top: 1rem;
+          }
+        }
+      }
+    }
+
+    .skillBars {
+      padding: 2rem;
+      // text-align: center;
+      width: 50%;
+    }
+  }
+}

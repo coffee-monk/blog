@@ -5,7 +5,7 @@ import {
   faFileAlt,
   faChartLine,
   faPalette,
-  faPenNib,
+  faMicroscope
 } from "@fortawesome/free-solid-svg-icons"
 
 import servicesStyles from "./services.module.scss"
@@ -23,7 +23,7 @@ const Services = () => {
       caption: "Visual & Audio Digital Design",
     },
     {
-      icon: faChartLine,
+      icon: faMicroscope,
       title: "Research",
       caption: "Data analysis & Research Methods",
     },
@@ -35,7 +35,7 @@ const Services = () => {
   ]
 
   return (
-    <section className={servicesStyles.services}>
+    <section className={servicesStyles.servicesSection}>
       <h1>SERVICES</h1>
 
       <div className={servicesStyles.serviceItems}>
