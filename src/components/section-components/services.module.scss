@@ -5,13 +5,16 @@
   padding: 6rem 2rem;
   background: var(--textColorLight);
 
-  h1::after {
-    content: "";
-    display: block;
-    width: 60%;
-    height: 4px;
-    background: #3b3b3b;
-    margin: 0.5rem auto 3rem auto;
+  h1 {
+    margin-bottom: 0.5rem;
+    &::after {
+      content: "";
+      display: block;
+      width: 60%;
+      height: 4px;
+      background: #3b3b3b;
+      margin: 0.5rem auto 3rem auto;
+    }
   }
 
   .serviceItems {
@@ -37,8 +40,22 @@
         color: var(--primaryColor);
       }
 
-      & > p {
-        text-align: center;
+      .caption {
+        display: flex;
+        align-items: center;
+
+        .circleChar {
+          color: var(--primaryColor);
+          margin: 0rem 0.25rem;
+        }
+
+        & > p {
+          text-align: center;
+        }
+
+        & > p:last-child > span {
+          display: none;
+        }
       }
     }
   }

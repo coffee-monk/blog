@@ -1,8 +1,3 @@
-.example {
-  position: absolute !important;
-  background: blue;
-}
-
 // CONTACT
 
 .contactContainer {
@@ -12,122 +7,87 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
 
-.contactForm {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: auto;
-}
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
 
-.contactForm h2::after {
-  content: "";
-  display: block;
-  width: 60%;
-  height: 4px;
-  background: var(--textColorLight);
-  margin: 0.5rem auto 0rem auto;
-}
+    & h2::after {
+      content: "";
+      display: block;
+      width: 60%;
+      height: 4px;
+      background: var(--textColorLight);
+      margin: 0.5rem auto 0rem auto;
+    }
+    & h5 {
+      margin: 1rem auto 0.5rem auto;
+    }
 
-.contactForm h5 {
-  margin: 1rem auto 0.5rem auto;
-}
+    .contactFields {
+      margin: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80vh;
+      margin: 0px;
 
-.contactContainer > input:hover {
-  background: var(--primaryColor);
-}
+      & > * {
+        margin: 0.2rem;
+        width: 100%;
+        background: transparent;
+        border: 1px solid var(--primaryColor);
+        border-radius: 5px;
+        color: #fff;
+        padding: 5px 8px 5px 8px;
+        margin: 8px;
+        outline: none;
+      }
 
-.contactFields {
-  margin: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 80vh;
-  margin: 0px;
-}
+      & > *::placeholder {
+        color: #7f7f7f;
+      }
 
-.contactFields > * {
-  margin: 0.2rem;
-  width: 100%;
-  background: transparent;
-  border: 1px solid var(--primaryColor);
-  border-radius: 5px;
-  color: #fff;
-  padding: 5px 8px 5px 8px;
-  margin: 8px;
-  outline: none;
-}
+      & > input:focus,
+      & > textarea:focus {
+        box-shadow: 0 0 7.5px var(--primaryColor);
+      }
 
-.contactFields > *::placeholder {
-  color: #7f7f7f;
-}
+      .textArea {
+        height: 8rem;
+      }
 
-.contactFields > input:focus,
-.contactFields > textarea:focus {
-  box-shadow: 0 0 7.5px var(--primaryColor);
-}
+      .submit {
+        // submit button
+        color: var(--textColorLight);
+        background: transparent;
+        border: 1px solid var(--primaryColor);
+        border-radius: 0px;
+        padding: 7.5px;
+        width: 5rem;
+        transition: 0.5s;
+        // margin: 8px;
+        cursor: pointer;
+        align-self: flex-end;
 
-.textArea {
-  height: 8rem;
-}
+        &:hover {
+          background: var(--primaryColor);
+        }
+      }
+    }
+  }
 
-.submit {
-  // submit button
-  color: var(--textColorLight);
-  background: transparent;
-  border: 1px solid var(--primaryColor);
-  border-radius: 0px;
-  padding: 7.5px;
-  width: 5rem;
-  transition: 0.5s;
-  // margin: 8px;
-  cursor: pointer;
-  align-self: flex-end;
-}
-
-.submit:hover {
-  background: var(--primaryColor);
+  & > input:hover {
+    background: var(--primaryColor);
+  }
 }
 
 // FOOTER
 
 html {
   scroll-behavior: smooth;
-}
-
-.date {
-  margin: auto 0px;
-}
-
-.upArrow {
-  transition: 0.25s;
-  color: #000;
-  cursor: pointer;
-}
-
-// .upArrow:hover {
-//   color: #3b3b3b;
-// }
-
-.socialMedia {
-  margin: auto 0px;
-}
-
-.socialMedia li {
-  margin: 0 0 0 15px;
-  display: inline-block;
-  text-transform: uppercase;
-}
-
-.socialMedia li a {
-  border: solid var(--textColorLight) 1px;
-  border-radius: 50%;
-  transition: 0.5s;
-}
-
-.socialMedia li a:hover {
-  border-radius: 0%;
 }
 
 //////////////
@@ -137,14 +97,47 @@ html {
   background: var(--primaryColor);
   color: #fff;
   padding: 16px;
-}
 
-.footerLeft.innerWrapper,
-.footerRight.innerWrapper {
-  flex: 1;
-  display: flex;
-  min-width: -webkit-min-content; /* Workaround to Chrome bug */
-}
-.footerRight.innerWrapper {
-  justify-content: flex-end;
+  .footerLeft.innerWrapper,
+  .footerRight.innerWrapper {
+    flex: 1;
+    display: flex;
+    min-width: -webkit-min-content; /* Workaround to Chrome bug */
+
+    .date {
+      margin: auto 0px;
+    }
+  }
+
+  .footerCenter {
+    .upArrow {
+      transition: 0.25s;
+      color: #000;
+      cursor: pointer;
+    }
+  }
+
+  .footerRight.innerWrapper {
+    justify-content: flex-end;
+
+    .socialMedia {
+      margin: auto 0px;
+
+      & li {
+        margin: 0 0 0 15px;
+        display: inline-block;
+        text-transform: uppercase;
+
+        & a {
+          border: solid var(--textColorLight) 1px;
+          border-radius: 50%;
+          transition: 0.5s;
+
+          &:hover {
+            border-radius: 0%;
+          }
+        }
+      }
+    }
+  }
 }

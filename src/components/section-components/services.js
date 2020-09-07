@@ -5,7 +5,7 @@ import {
   faFileAlt,
   faChartLine,
   faPalette,
-  faMicroscope
+  faMicroscope,
 } from "@fortawesome/free-solid-svg-icons"
 
 import servicesStyles from "./services.module.scss"
@@ -15,22 +15,26 @@ const Services = () => {
     {
       icon: faLaptopCode,
       title: "Development",
-      caption: "Full-Stack Web Development",
+      caption: [{ item: "Full-Stack Web Development" }],
     },
     {
       icon: faPalette,
       title: "Design",
-      caption: "Visual & Audio Digital Design",
+      caption: [{ item: "Digital" }, { item: "Visual" }, { item: "UI/UX" }, ],
     },
     {
       icon: faMicroscope,
       title: "Research",
-      caption: "Data analysis & Research Methods",
+      caption: [{ item: "Data Analysis" }, { item: "Research Methods" }],
     },
     {
       icon: faFileAlt,
       title: "Editorial",
-      caption: "Editing, Tutoring, & Transcription",
+      caption: [
+        { item: "Editing" },
+        { item: "Tutoring" },
+        { item: " Transcription" },
+      ],
     },
   ]
 
@@ -46,7 +50,15 @@ const Services = () => {
               icon={service.icon}
             />
             <h3>{service.title}</h3>
-            <p>{service.caption}</p>
+
+            <span className={servicesStyles.caption}>
+              {service.caption.map((serviceElement, index) => (
+                <p>
+                  {serviceElement.item}
+                  <span className={servicesStyles.circleChar}>&#8728;</span>
+                </p>
+              ))}
+            </span>
           </div>
         ))}
       </div>
