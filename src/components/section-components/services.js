@@ -20,7 +20,7 @@ const Services = () => {
     {
       icon: faPalette,
       title: "Design",
-      caption: [{ item: "Digital" }, { item: "Visual" }, { item: "UI/UX" }, ],
+      caption: [{ item: "Digital" }, { item: "UI/UX" }, { item: "Material" }],
     },
     {
       icon: faMicroscope,
