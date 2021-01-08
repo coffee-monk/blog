@@ -2,7 +2,7 @@ import Typography from "typography"
 import bootstrapTheme from "typography-theme-bootstrap"
 
 bootstrapTheme.overrideThemeStyles = () => {
-	return {}
+  return {}
 }
 
 const typography = new Typography(bootstrapTheme)

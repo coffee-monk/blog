@@ -5,6 +5,7 @@ const Button = props => (
   <ButtonWrapper props={props}>{props.children}</ButtonWrapper>
 )
 
+
 const ButtonWrapper = styled.button`
   display: block;
   border: none;

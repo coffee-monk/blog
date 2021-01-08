@@ -4,7 +4,7 @@ import {
   faLaptopCode,
   faFileAlt,
   faChartLine,
-  faPalette,
+ faPalette,
   faMicroscope,
 } from "@fortawesome/free-solid-svg-icons"
 
