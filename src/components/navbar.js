@@ -58,9 +58,6 @@ export class Navbar extends Component {
               <a href={`${__PATH_PREFIX__}/`}>Portfolio</a>
             </li>
             <li>
-              <a href={`${__PATH_PREFIX__}/404/`}>Resume</a>
-            </li>
-            <li>
               <a href={`${__PATH_PREFIX__}/blog/`}>Blog</a>
             </li>
             <ScrollLink

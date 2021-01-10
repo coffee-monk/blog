@@ -14,21 +14,22 @@ export class VideoBackground extends Component {
   }
 
   render() {
-    const videoOptions = {
-      playerVars: {
-        // https://developers.google.com/youtube/player_parameters
-        autoplay: 1,
-        controls: 0,
-        rel: 0,
-        showinfo: 0,
-      },
-    }
+    // const videoOptions = {
+    //   playerVars: {
+    //     // https://developers.google.com/youtube/player_parameters
+    //     autoplay: 1,
+    //     controls: 0,
+    //     rel: 0,
+    //     showinfo: 0,
+    //   },
+    // }
 
     return (
       <section className={vidBgStyles.showcase}>
         <div className={vidBgStyles.videoContainer}>
           <video
-            src="https://traversymedia.com/downloads/video.mov"
+            // src="https://traversymedia.com/downloads/video.mov"
+            src={require("../assets/pexels-pavel-danilyuk-5495898.mp4")}
             autoPlay
             muted
             loop

@@ -1,10 +1,10 @@
-import React, { Component } from "react"
+import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faLaptopCode,
   faFileAlt,
   faChartLine,
- faPalette,
+  faPalette,
   faMicroscope,
 } from "@fortawesome/free-solid-svg-icons"
 

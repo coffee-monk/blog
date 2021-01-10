@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import typerStyles from "./typer-styles.module.scss"
 
 class Test extends React.Component {

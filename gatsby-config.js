@@ -35,8 +35,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/images`,
-        name: `images`,
+        path: `${__dirname}/src/assets`,
+        name: `assets`,
       },
     },
     {
@@ -87,12 +87,6 @@ module.exports = {
         display: `minimal-ui`,
         // edit below
         icon: `content/assets/gatsby-icon.png`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
       },
     },
   ],

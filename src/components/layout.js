@@ -1,7 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import styled from "styled-components"
-import { rhythm, scale } from "../utils/typography"
+import "./layout.css"
 
 import VideoBackground from "./video-background"
 import Navbar from "./navbar"
@@ -31,17 +31,13 @@ class Layout extends React.Component {
     return (
       <Wrapper>
         <header>{header}</header>
-
         <main>{children}</main>
-
         <Footer />
       </Wrapper>
     )
   }
 }
 
-const Wrapper = styled.div`
-  margin: none;
-`
+const Wrapper = styled.div``
 
 export default Layout

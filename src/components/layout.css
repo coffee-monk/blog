@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Ubuntu+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700;900&family=Ubuntu+Mono:ital,wght@1,700&display=swap");
+
+:root {
+  --textColorLight: #fff;
+
+  --primaryColor: #f92672;
+  --secondaryColor: #000;
+  --tertiaryColor: rgba(0, 0, 0, 0.5);
+}
+
+* {
+  margin: 0;
+}
+
+a {
+  box-shadow: none;
+  text-decoration: none;
+}
+
+a,
+p,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Fira Code", monospace;
+}
+
+h1 {
+  font-family: "Inconsolata", monospace;
+}
+
+div {
+  font-family: "Ubuntu Mono", monospace;
+}

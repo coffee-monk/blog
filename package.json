@@ -57,6 +57,7 @@
     "typewriter-effect": "^2.13.1",
     "typography": "^0.16.19",
     "typography-theme-bootstrap": "^0.16.19",
+    "typography-theme-funston": "^0.16.19",
     "typography-theme-wordpress-2016": "^0.16.19"
   },
   "devDependencies": {
