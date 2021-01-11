@@ -24,6 +24,7 @@ import {
   faVials,
   faMicrochip,
   faMapMarkerAlt,
+  faMoon,
 } from "@fortawesome/free-solid-svg-icons"
 
 import skillsBarStyles from "./skill-bars.module.scss"

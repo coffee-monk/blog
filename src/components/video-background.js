@@ -29,7 +29,7 @@ export class VideoBackground extends Component {
         <div className={vidBgStyles.videoContainer}>
           <video
             // src="https://traversymedia.com/downloads/video.mov"
-            src={require("../assets/pexels-pavel-danilyuk-5495898.mp4")}
+            src={require("../../content/assets/pexels-pavel-danilyuk-5495898.mp4")}
             autoPlay
             muted
             loop
@@ -58,7 +58,7 @@ export class VideoBackground extends Component {
 
         <div className={vidBgStyles.bottomLeft}>
           <span className={vidBgStyles.typer}>
-            <h4 style={{ color: "#f92672" }}>$ </h4>
+            <h4 style={{ color: "#f92672" }}>$</h4>
             <Typer
               dataText={[
                 "Hi, I'm Mike!",

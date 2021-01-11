@@ -1,7 +1,8 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
 import { Link as ScrollLink } from "react-scroll"
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons"
 import navbarStyles from "./navbar.module.scss"
 
 export class Navbar extends Component {
@@ -68,6 +69,9 @@ export class Navbar extends Component {
             >
               <Link className={navbarStyles.btn}>Contact</Link>
             </ScrollLink>
+            <li>
+              <FontAwesomeIcon icon={faMoon} />
+            </li>
           </ul>
         </div>
       </nav>
